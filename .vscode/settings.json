@@ -1,0 +1,19 @@
+{
+  "editor.formatOnSave": true,
+
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.organizeImports": "never"
+  },
+
+  "tailwindCSS.experimental.classRegex": [
+    "twMerge\\(([^)]*)\\)",
+    "clsx\\(([^)]*)\\)"
+  ],
+
+  "eslint.useFlatConfig": true,
+
+  "editor.formatOnPaste": false,
+  "explorer.confirmDelete": true,
+  "editor.formatOnSaveMode": "modifications"
+}

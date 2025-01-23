@@ -6,6 +6,10 @@
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
+    "lint": "yarn lint:eslint && yarn lint:prettier",
+    "lint:eslint": "eslint .",
+    "lint:prettier": "prettier . --check",
+    "lint:fix": "eslint . --fix && prettier --write --list-different .",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "clean": "trash .nuxt && trash .output && trash node_modules && rm -rf pnpm-lock.yaml",
@@ -13,17 +17,19 @@
     "reboot": "pnpm clean && pnpm install"
   },
   "dependencies": {
+    "@nuxt/eslint": "0.7.5",
     "@nuxtjs/i18n": "9.1.2",
     "@pinia/nuxt": "0.9.0",
     "axios": "1.7.9",
+    "eslint": "^8.57.0 || ^9.0.0",
     "nuxt": "^3.15.2",
     "pinia": "2.3.1",
     "vue": "latest",
-    "vue-i18n": "11.0.0-rc.1",
     "vue-router": "latest"
   },
   "devDependencies": {
     "trash": "9.0.0",
-    "vite-plugin-vue-inspector": "5.3.1"
+    "vite-plugin-vue-inspector": "5.3.1",
+    "vue-i18n": "11.0.0-rc.1"
   }
 }

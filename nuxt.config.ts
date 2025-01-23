@@ -4,9 +4,11 @@ export default defineNuxtConfig({
   compatibilityDate: "2024-11-01",
   devtools: { enabled: true },
   srcDir: "./src",
+
   build: {
     transpile: ["nuxt", "vite-plugin-vue-inspector", "@vue/runtime-core"],
   },
+
   vite: {
     resolve: {
       alias: {
@@ -21,6 +23,14 @@ export default defineNuxtConfig({
     head: {
       charset: "utf-8",
       viewport: "width=device-width, initial-scale=1",
+    },
+  },
+
+  modules: ["@nuxt/eslint", "@nuxt/eslint"],
+
+  eslint: {
+    config: {
+      stylistic: true,
     },
   },
 });

@@ -1,3 +1,3 @@
 <template>
-  <header>Header</header>
+  <header>{{ $t("Common.brand")  }}</header>
 </template>
