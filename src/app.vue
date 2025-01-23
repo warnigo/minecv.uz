@@ -1,9 +1,5 @@
 <template>
-  <Layout>
+  <NuxtLayout>
     <NuxtPage />
-  </Layout>
+  </NuxtLayout>
 </template>
-
-<script setup>
-import { Layout } from "./app/layouts";
-</script>

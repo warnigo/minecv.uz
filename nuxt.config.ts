@@ -11,7 +11,16 @@ export default defineNuxtConfig({
     resolve: {
       alias: {
         "@": fileURLToPath(new URL("./src", import.meta.url)),
+        "#widgets": fileURLToPath(new URL("./src/widgets", import.meta.url)),
+        "#layouts": fileURLToPath(new URL("./src/layouts", import.meta.url)),
       },
+    },
+  },
+
+  app: {
+    head: {
+      charset: "utf-8",
+      viewport: "width=device-width, initial-scale=1",
     },
   },
 });
